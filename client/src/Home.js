@@ -7,6 +7,8 @@ export default function Home () {
         <>
             <h1>welcome home</h1>
             <h1>{quote}</h1>
+            <h1>remember to drink water </h1>
+            <h1>don't forget to move! </h1>
 
         </>
     )
