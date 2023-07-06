@@ -1,5 +1,7 @@
 
 import './App.css';
+import Home from './Home';
+import Jobs from './Jobs';
 
 function App() {
   return (
