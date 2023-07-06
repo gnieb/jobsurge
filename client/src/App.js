@@ -2,6 +2,7 @@
 import './App.css';
 import Home from './Home';
 import Jobs from './Jobs';
+import NoMatch from './NoMatch';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/jobs' element={<Jobs/>}/>
+        <Route path="*" element={<NoMatch />} />
       </Routes>
     </Router>
   );
