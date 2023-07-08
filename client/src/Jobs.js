@@ -1,7 +1,24 @@
+import { useEffect, useState } from "react"
+
 export default function Jobs () {
+    const [jobs, setJobs] = useState([])
+
+    useEffect(() => {
+        fetch('/fetchingjobs')
+            .then((r) => {
+                if (r.ok) {
+                    r.json().then(r => {
+                        setJobs(r)
+                })
+            }
+        })
+    }, [])
+
+
     return (
-        <>
-        <h1>welcome to Jobs</h1>
-        </>
+        <div>
+            JOBS WILL GO HERE
+        </div>
+        
     )
 }
