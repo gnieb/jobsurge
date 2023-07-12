@@ -2,17 +2,25 @@ import { useEffect, useState } from "react"
 
 export default function Home () {
     const [quotes, setQuotes] = useState([])
+    const [randomQuote, setRandomQuote] = useState("")
 
     useEffect(()=> {
         fetch('/quotes')
         .then(r => {
             if (r.ok){
-                r.json().then(data => setQuotes(data))
+                r.json().then(data => {
+                    setQuotes(data)
+                    setRandomQuote(data[Math.floor(Math.random() * quotes.length)])
+                 } )
+                
+            }
+            else {
+                console.log("what is going on????")
             }
         })
     }, [])
 
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+    
     
     return (
         <div>
