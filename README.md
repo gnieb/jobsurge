@@ -1,16 +1,31 @@
 # JobWave
-[Back-End server here](https://github.com/gnieb/jobwave-server)
+[Back-End Twin Server Here](https://github.com/gnieb/jobwave-server)
 
 ## About
-This application was originally developed to help me get a job at a company I REALLY wanted to work for, but they didn't have the jobs posted that fit my qualifications. 
+This application was originally developed to help me get a job at a company I REALLY wanted to work for, but they didn't have the jobs posted yet that fit my qualifications. 
 **Enter JobWave.**
 
+### Built With
 
-### What's happening next?
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- replace SVG with a small wave
-- JOBS page using the backend scraper ([IN PROGRESS](https://github.com/gnieb/jobwave-server) )
-- pick a color scheme
-- implement default theme via CSS config
+
+
+## Features In Progress
+
 - connect the front end to the back end server
-- deploy!!
+- Deployment
+
+## Features Completed 
+
+- react-router-dom v6 routes
+- Home Page created with placeholder encouraging quotes and reminders 
+- Jobs Page created with job placeholders, waiting for web scraper data
+
+
+
+## To-Do
+- replace SVG with a small wave
+- implement default theme via CSS config
