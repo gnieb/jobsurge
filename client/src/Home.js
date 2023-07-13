@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import Advice from "./Advice"
+import { NavLink } from "react-router-dom"
 
 export default function Home () {
     const [quotes, setQuotes] = useState([])
@@ -32,7 +34,7 @@ export default function Home () {
                 </div>
             <div className="m-5 p-5">
                 <p className="text-3xl">{randomQuote.quote}</p>
-                <p className="text-gray-300 text-right hover:text-teal-400 hover:cursor-pointer">See all ♡</p>
+                <NavLink to='/advice' className="text-gray-300 text-right hover:text-teal-400 hover:cursor-pointer">See all ♡</NavLink>
             </div>
         </div>
         <div className="flex items-center justify-center">
