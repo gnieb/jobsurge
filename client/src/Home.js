@@ -32,6 +32,7 @@ export default function Home () {
                 </div>
             <div className="m-5 p-5">
                 <p className="text-3xl">{randomQuote.quote}</p>
+                <p className="text-gray-300 text-right hover:text-teal-400 hover:cursor-pointer">See all ♡</p>
             </div>
         </div>
         <div className="flex items-center justify-center">
