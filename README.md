@@ -24,7 +24,35 @@ This application was originally developed to help me get a job at a company I RE
 - Home Page created with placeholder encouraging quotes and reminders 
 - Jobs Page created with job placeholders, waiting for web scraper data
 
+## Usage
 
+### Installation
+1. Fork and Clone this repo and the back-end repo
+   ```sh
+   git clone https://github.com/gnieb/jobwave
+   git clone https://github.com/gnieb/jobwave-server 
+   ```
+
+2. CD into client directory and install npm packages
+    ```sh
+    cd client
+    ```
+    ```sh
+    npm install
+    ```
+3. Start the Application
+    ```sh
+    npm start
+    ```
+4. Create Server virtual environment 
+    ```sh
+    pipenv install
+    pipenv shell
+    ```
+5. Start the server
+    ```sh
+    python app.py
+    ```
 
 ## To-Do
 - replace SVG with a small wave

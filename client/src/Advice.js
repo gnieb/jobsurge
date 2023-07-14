@@ -17,16 +17,18 @@ export default function Advice () {
 
     const displayAdvice = advice.map(a => {
         return (
-            <div key={a.id}>
-                <h1>{a.quote}</h1>
-                <p>{a.by}</p>
+            <div key={a.id} className="p-10">
+                <h1 className="text-6xl">{a.quote}</h1>
+                <p className="text-right ">- {a.by}</p>
             </div>
         )
     })
 
     return (
-        <div>
+        <div className="flex justify-center m-5 p-8 ">
+            <div className="flex-col w-2/3">
             {displayAdvice}
+            </div>
         </div>
     )
 }
