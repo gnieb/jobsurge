@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 
 export default function Advice () {
     const [advice, setAdvice] = useState([])
+    const [showModal, setShowModal] = useState(false)
 
     useEffect(() => {
         fetch('/quotes')
@@ -25,10 +26,20 @@ export default function Advice () {
     })
 
     return (
+        <div className="static">
+            <div className="fixed top-20 left-4 m-10 ">
+                Leave me your wisdom 
+                <button class="bg-teal-100 hover:bg-orange-400 text-gray-800 font-bold rounded-full inline-flex items-center content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                </button>
+           </div>
         <div className="flex justify-center m-5 p-8 ">
             <div className="flex-col w-2/3">
             {displayAdvice}
             </div>
+        </div>
         </div>
     )
 }
