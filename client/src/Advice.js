@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import AddAdvice from "./AddAdvice"
+
+import { Modal } from "react-bootstrap"
 
 export default function Advice () {
     const [advice, setAdvice] = useState([])
@@ -28,8 +29,7 @@ export default function Advice () {
 
     return (
         <div className="static">
-            {showModal ? <AddAdvice setShowModal={setShowModal}/> : 
-            <div> 
+           
             <div className="fixed top-20 left-4 m-10 ">
                 Leave me your wisdom 
                 <button onClick={() => setShowModal(true) } className="bg-teal-100 hover:bg-orange-500 text-gray-800 font-bold rounded-full inline-flex items-center content-center">
@@ -42,9 +42,20 @@ export default function Advice () {
             <div className="flex-col w-2/3">
             {displayAdvice}
             </div>
-        </div> 
         </div>
-        }
+        <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header >
+                <Modal.Title>Share your wisdom with me</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    form here
+                </Modal.Body>
+                <Modal.Footer>
+                <button onClick={()=> setShowModal(false)} >
+                    Cancel
+                </button>
+                </Modal.Footer>
+        </Modal>
         </div>
     )
 }
