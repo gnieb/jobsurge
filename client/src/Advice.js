@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 
 import { Modal } from "react-bootstrap"
+import { Form } from "react-bootstrap"
+
 
 export default function Advice () {
     const [advice, setAdvice] = useState([])
@@ -27,6 +29,11 @@ export default function Advice () {
         )
     })
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+    }
+
     return (
         <div className="static">
            
@@ -48,7 +55,11 @@ export default function Advice () {
                 <Modal.Title>Share your wisdom with me</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    form here
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Label>Advice</Form.Label>
+                        <Form.Control type="text"></Form.Control>
+                        <button className="text-sm px-4 py-2 leading-none border rounded text-white bg-orange-500 border-white hover:border-transparent hover:bg-teal-500 mt-4 lg:mt-0">Add Yours</button>
+                    </Form>
                 </Modal.Body>
                 <Modal.Footer>
                 <button onClick={()=> setShowModal(false)} >
