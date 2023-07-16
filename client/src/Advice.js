@@ -53,7 +53,17 @@ export default function Advice () {
             by: formData.by
         }
         console.log(newAdvice)
-        fetch('/quotes')
+        fetch('/quotes', {
+            method: 'POST',
+            headers: {'Content-Type':'application.json'},
+            body: JSON.stringify(newAdvice)
+        })
+        .then(r => {
+            if (r.ok){
+                console.log("should add the new advice to the bottom of the page")
+                r.json().then(setAdvice([...advice, newAdvice]))
+            }
+        })
 
     }
 
