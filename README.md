@@ -1,4 +1,4 @@
-# JobWave
+.# JobWave
 [Back-End Twin Server Here](https://github.com/gnieb/jobwave-server)
 
 ## About
@@ -15,7 +15,6 @@ This application was originally developed to help me get a job at a company I RE
 
 ## Features In Progress
 
-- connect the front end to the back end server
 - Deployment
 
 ## Features Completed 
@@ -23,6 +22,7 @@ This application was originally developed to help me get a job at a company I RE
 - react-router-dom v6 routes
 - Home Page created with placeholder encouraging quotes and reminders 
 - Jobs Page created with job placeholders, waiting for web scraper data
+- Ability to add more advice collected from different developers to the collection of wisdom I've gathered.
 
 ## Usage
 
@@ -57,3 +57,7 @@ This application was originally developed to help me get a job at a company I RE
 ## To-Do
 - replace SVG with a small wave
 - implement default theme via CSS config
+
+
+
+Note: Selenium uses the binary driver to control the web browser of choice. This Python package provides binary drivers for the following supported web browsers: Chrome, Chromium, Brave, Firefox, IE, Edge, and Opera. Note that Safari is not supported.
