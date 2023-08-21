@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
+import Job from "./Job"
 
 export default function Jobs () {
     const [jobs, setJobs] = useState([])
 
     useEffect(() => {
-        fetch('/fetchingjobs')
+        fetch('/fetchjobs')
             .then((r) => {
                 if (r.ok) {
                     r.json().then(r => {
@@ -14,10 +15,11 @@ export default function Jobs () {
         })
     }, [])
 
+    const displayJobs = jobs.map(j, i => <Job key={i} j={j} />)
 
     return (
         <div>
-            JOBS WILL GO HERE
+            {jobs}
         </div>
         
     )
