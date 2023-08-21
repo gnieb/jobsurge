@@ -1,7 +1,7 @@
 export default function Job({j}) {
     return (
         <div>
-            Job.
+            <a className="font-bold" href={j.link}>{j.title}</a>
         </div>
     )
 }
