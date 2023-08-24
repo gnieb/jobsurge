@@ -45,21 +45,17 @@ export default function Home () {
                     <Time />
                 </div>
 
-            <div className="flex justify-between p-5">
-                <div className="">
+            <div className="flex justify-between px-5">
+                <div className="w-1/2 p-2 px-5 bg-gray-200 text-center">
                     <ToDos todos={todos} />
                 </div>
-                <div>
-
+                <div className="w-1/2 text-right px-5">
+                    <div className="text-3xl py-3">Did you drink water today?</div>
+                    <div className="py-3">{randomQuote.quote}</div>
+                    <div className="py-3">
+                        <NavLink to='/advice' className="text-gray-300 text-right hover:text-teal-400 hover:cursor-pointer">See all ♡</NavLink>
+                    </div>
                 </div>
-            </div>
-            <div className="flex justify-between p-5">
-                <p className="text-6xl">Did you drink water today?</p>
-                <div className="text-3xl">
-                    {randomQuote.quote}
-                    <NavLink to='/advice' className="text-gray-300 text-right hover:text-teal-400 hover:cursor-pointer">See all ♡</NavLink>
-                </div>
-                
             </div>
         </div>
         <div className="flex items-center justify-center">
