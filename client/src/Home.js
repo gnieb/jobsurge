@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Advice from "./Advice"
 import { NavLink } from "react-router-dom"
+import Time from "./Time"
 
 export default function Home () {
     const [quotes, setQuotes] = useState([])
@@ -28,7 +29,7 @@ export default function Home () {
         <div>
             <div className="flex flex-row justify-between m-5 p-5">
                 <div className = "m-5 p-5">
-            
+                    <Time />
                     <p className="text-6xl">Did you drink water today?</p>
                     
                 </div>
