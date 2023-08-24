@@ -3,6 +3,7 @@ import Job from "./Job"
 
 export default function Jobs () {
     const [jobs, setJobs] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         fetch('/fetchjobs')
@@ -15,7 +16,8 @@ export default function Jobs () {
         })
     }, [])
 
-    const displayJobs = jobs.map((j, i) => {
+    const oddballJobs = jobs.filter(job => job.company === "oddball")
+    const displayOdd = oddballJobs.map((j, i) => {
        return (
         <Job key={i} j={j} />
        ) 
@@ -25,9 +27,9 @@ export default function Jobs () {
         <div className="flex justify-between sm:p-10">
             <div>
             <div className="text-5xl">ODDBALL</div>
-            <div>{displayJobs}</div>
+            <div>{displayOdd}</div>
             </div>
-            
+
         </div>
         
     )
