@@ -35,12 +35,12 @@ export default function ToDos(){
     return(
         <>
         {showModal ? 
-            <NewToDo setShowModal={setShowModal} /> :
+            <NewToDo setShowModal={setShowModal} /> : <></>}
             <div className="">
                 <button onClick={()=> setShowModal(!showModal)} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 rounded-full inline-flex items-center">Add</button>
                 {displayToDos}
             </div>
-        }
+       
         </>
     )
 }
