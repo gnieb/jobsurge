@@ -47,7 +47,7 @@ export default function Home () {
 
             <div className="flex justify-between px-5">
                 <div className="w-1/2 p-2 px-5 bg-gray-200 text-center">
-                    <ToDos todos={todos} />
+                    <ToDos todos={todos} setTodos={setTodos} />
                 </div>
                 <div className="w-1/2 text-right px-5">
                     <div className="text-3xl py-3">Did you drink water today?</div>
