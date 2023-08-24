@@ -51,12 +51,10 @@ export default function NewToDo({setShowModal, setTodos, todos}){
                     <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
                       <h3 className="text-3xl font=semibold">ADD IT TO THE LIST </h3>
                       <button
-                        className="bg-transparent border-0 text-black float-right px-3"
+                        className="bg-pink-200 mx-2 rounded-full border-0 text-black float-right px-3"
                         onClick={() => setShowModal(false)}
                       >
-                        <span className="text-black opacity-7 h-6 w-6 text-xl block bg-gray-400 py-0 rounded-full">
-                          x
-                        </span>
+                        close
                       </button>
                     </div>
                     <div className="relative p-6 flex-auto">
@@ -75,14 +73,6 @@ export default function NewToDo({setShowModal, setTodos, todos}){
                             <option value="THIS MONTH" >THIS MONTH</option>
                             <option value="THIS YEAR">THIS YEAR</option>
                         </select>
-                      
-                      <button
-                        className="text-red-500 background-transparent font-bold uppercase m-2 px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                    
-                      >
-                        Close
-                      </button>
                       <button
                         className="text-white m-2 bg-green-800 active:bg-yellow-700 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                         type="submit"
