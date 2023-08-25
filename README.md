@@ -54,9 +54,10 @@ This application was originally developed to help me get a job at a company I RE
     python app.py
     ```
 
-## To-Do
+## Features in Progress
 - replace SVG with a small wave
 - implement default theme via CSS config
+- implement loading state for the JOBS page... the web driver takes ignificant time and resources to pull the data, and I want a nice user experience that shows it's doing something! 
 
 
 
