@@ -16,6 +16,7 @@ This application was originally developed to help me get a job at a company I RE
 ## Features In Progress
 
 - Deployment
+- display to dos by timefrme
 
 ## Features Completed 
 

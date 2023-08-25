@@ -46,10 +46,10 @@ export default function Home () {
                 </div>
 
             <div className="flex justify-between px-5">
-                <div className="w-1/2 p-2 px-5 bg-gray-200 text-center">
+                <div className="w-2/3 p-2 px-5 text-center">
                     <ToDos todos={todos} setTodos={setTodos} />
                 </div>
-                <div className="w-1/2 text-right px-5">
+                <div className="w-1/3 text-right px-5">
                     <div className="text-3xl py-3">Did you drink water today?</div>
                     <div className="py-3">{randomQuote.quote}</div>
                     <div className="py-3">
