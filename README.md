@@ -23,6 +23,7 @@ This application was originally developed to help me get a job at a company I RE
 - Home Page created with placeholder encouraging quotes and reminders 
 - Jobs Page created with job placeholders, waiting for web scraper data
 - Ability to add more advice collected from different developers to the collection of wisdom I've gathered.
+- SVG lightning icon
 
 ## Usage
 
