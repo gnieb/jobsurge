@@ -1,9 +1,6 @@
 import { useState } from "react"
 export default function ToDo({t}){
-    
-
     const [isDone, setIsDone] = useState(t.done)
-
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -27,17 +24,25 @@ export default function ToDo({t}){
             }
         })
     }
+
+    const handleDelete = (e) => {
+        e.preventDefault();
+        fetch(`/todos/${t.id}`,{
+            method:"DELETE"
+        })
+        .then(r=> {
+            if(r.ok){
+                r.json().then(console.log("To Do deleted successfully!"))
+            }
+        })
+    }
     
     return (
-        <>
-        {isDone? 
-        <form onSubmit={handleSubmit} >
-            <button className="line-through" type="submit">{t.title}</button>
-        </form> :
-        <form onSubmit={handleSubmit}>
-        <button type="submit">{t.title}</button>
-        </form> 
-        }
-        </>
+        <div>
+            <div className="text-2xl">
+                    ~ {t.title}
+                <button className="mx-2 px-1 rounded-full shadow bg-pink-100">x</button>
+            </div>
+        </div>
     )
 }

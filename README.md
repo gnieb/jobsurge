@@ -16,7 +16,7 @@ This application was originally developed to help me get a job at a company I RE
 ## Features In Progress
 
 - Deployment
-- display to dos by timefrme
+- implement editing on the to do's and a delete button
 
 ## Features Completed 
 
@@ -25,6 +25,7 @@ This application was originally developed to help me get a job at a company I RE
 - Jobs Page created with job placeholders, waiting for web scraper data
 - Ability to add more advice collected from different developers to the collection of wisdom I've gathered.
 - SVG lightning icon
+- TO DO FEATURE: Career search to-do's displayed by priority timeframe
 
 ## Usage
 

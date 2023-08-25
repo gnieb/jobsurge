@@ -70,7 +70,7 @@ export default function ToDos({todos, setTodos}){
             <NewToDo setShowModal={setShowModal} setTodos={setTodos} todos={todos} /> : <></>}
             
                 <button onClick={()=> setShowModal(!showModal)} 
-                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 rounded-full inline-flex items-center">
+                className="shadow bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-4 rounded-full inline-flex items-center">
                     Add
                 </button>
                 <div className="p-2 font-bold text-4xl">TODAY</div>
