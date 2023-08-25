@@ -4,36 +4,17 @@ import NewToDo from "./NewToDo"
 
 export default function ToDos({todos, setTodos}){
     const [showModal, setShowModal] = useState(false)
-    // const [todos, setTodos] = useState([])
-    // useEffect(() => {
-    //     fetch('/todos')
-    //     .then(r => {
-    //         if(r.ok) {
-    //             r.json().then(data => {
-    //                 setTodos(data)
-    //             })
-    //         }
-    //     })
-    // }, [])
 
-    const displayToDos = todos.map(t => {
-        if (t.done === true) {
-            return (
-            
-            <div key={t.id} className="line-through">
-                <ToDo  t={t}/>
-            </div>
-        )} 
-        else {
-            return (
-                <div key={t.id}><ToDo  t={t} /></div>
-        )}
-      })
+    const removeToDo = (tObj) => {
+        const filterToDos = todos.filter(t => t.id !== tObj.id )
+        setTodos(filterToDos)
+    }
+
 
       const displayTodayToDo = todos.map(t => {
         if(t.prio === "TODAY"){
             return (
-                <ToDo key={t.id}  t={t}/>
+                <ToDo removeToDo={removeToDo} key={t.id}  t={t}/>
             )
         }
       })
@@ -41,7 +22,7 @@ export default function ToDos({todos, setTodos}){
       const displayWeekToDo = todos.map(t => {
         if(t.prio === "THIS WEEK"){
             return (
-                <ToDo key={t.id} t={t}/>
+                <ToDo removeToDo={removeToDo} key={t.id} t={t}/>
             )
         }
       })
@@ -49,7 +30,7 @@ export default function ToDos({todos, setTodos}){
       const displayMonthToDo = todos.map(t => {
         if(t.prio === "THIS MONTH"){
             return (
-                <ToDo key={t.id} t={t}/>
+                <ToDo removeToDo={removeToDo} key={t.id} t={t}/>
             )
         }
       })
@@ -57,13 +38,13 @@ export default function ToDos({todos, setTodos}){
       const displayYearToDo = todos.map(t => {
         if(t.prio === "THIS YEAR"){
             return (
-                <ToDo key={t.id} t={t}/>
+                <ToDo removeToDo={removeToDo} key={t.id} t={t}/>
             )
         }
       })
+      
       const thisYear = new Date()
       
-
     return(
         <>
         {showModal ? 
