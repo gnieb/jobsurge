@@ -15,17 +15,22 @@ This application was originally developed to help me get a job at a company I RE
 
 ## Features In Progress
 
-- Deployment
-- implement editing on the to do's and a delete button
+- implement editing on the to do's
+    - delete
+    - edit prio
+    - edit description
+README
+
 
 ## Features Completed 
 
-- react-router-dom v6 routes
+
 - Home Page created with placeholder encouraging quotes and reminders 
 - Jobs Page created with job placeholders, waiting for web scraper data
 - Ability to add more advice collected from different developers to the collection of wisdom I've gathered.
 - SVG lightning icon
 - TO DO FEATURE: Career search to-do's displayed by priority timeframe
+
 
 ## Usage
 

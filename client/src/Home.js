@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import Advice from "./Advice"
 import { NavLink } from "react-router-dom"
 import Time from "./Time"
 import ToDos from "./ToDos"
@@ -16,7 +15,6 @@ export default function Home () {
                     setQuotes(data)
                     setRandomQuote(data[Math.floor(Math.random() * quotes.length)])
                  } )
-                
             }
             else {
                 console.log("what is going on????")
@@ -46,21 +44,22 @@ export default function Home () {
                 </div>
 
             <div className="flex justify-between px-5">
-                <div className="w-2/3 p-2 px-5 text-center">
+                <div className="w-3/4 p-2 px-5 text-center">
                     <ToDos todos={todos} setTodos={setTodos} />
                 </div>
-                <div className="w-1/3 text-right px-5">
+                <div className="w-1/4 text-right px-5">
                     <div className="text-3xl py-3">Did you drink water today?</div>
                     <div className="py-3">{randomQuote.quote}</div>
                     <div className="py-3">
                         <NavLink to='/advice' className="text-gray-300 text-right hover:text-teal-400 hover:cursor-pointer">See all ♡</NavLink>
                     </div>
+                    <div className="flex items-center justify-center ">
+                        <p>don't forget to move around a little! Take a break, go for a walk.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div className="flex items-center justify-center">
-            <p>don't forget to move around a little! Take a break, go for a walk.</p>
-        </div>
+        
         </div>
     )
 }

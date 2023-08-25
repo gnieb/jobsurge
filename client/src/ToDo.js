@@ -25,6 +25,8 @@ export default function ToDo({t, removeToDo}){
     //     })
     // }
 
+
+
     const handleDelete = () => {
         fetch(`/todos/${t.id}`,{
             method:"DELETE"
@@ -41,9 +43,9 @@ export default function ToDo({t, removeToDo}){
     
     return (
         <div>
-            <div className="text-2xl">
+            <div className="text-2xl m-1">
                     ~ {t.title}
-                <button className="mx-2 px-1 rounded-full shadow bg-pink-100"
+                <button className="mx-2 px-1 rounded-full shadow bg-orange-100"
                 onClick={handleDelete}>x</button>
             </div>
         </div>
