@@ -39,11 +39,7 @@ export default function NewToDo({setShowModal, setTodos, todos}){
         })
     }
 
-
-
-
     return (
-        
             <>
               <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -79,14 +75,11 @@ export default function NewToDo({setShowModal, setTodos, todos}){
                       >
                         Submit
                       </button>
-                   
                     </form>
                     </div>
                   </div>
                 </div>
               </div>
-            </>
-        
-
-    )
+            </>    
+  )
 }
