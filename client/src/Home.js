@@ -34,7 +34,16 @@ export default function Home () {
         })
     }, [])
 
-    
+    const handleEditTD = (tdObj) => {
+        const updatedTDs = todos.map( t => {
+            if(t.id === tdObj.id){
+                return tdObj
+            } else {
+                return t
+            }
+        }) 
+        setTodos(updatedTDs)
+    }
     
     return (
         <div>
@@ -45,7 +54,7 @@ export default function Home () {
 
             <div className="flex justify-between px-5">
                 <div className="w-3/4 p-2 px-5 text-center">
-                    <ToDos todos={todos} setTodos={setTodos} />
+                    <ToDos todos={todos} setTodos={setTodos} handleEditTD={handleEditTD} />
                 </div>
                 <div className="w-1/4 text-right px-5">
                     <div className="text-3xl py-3">Did you drink water today?</div>

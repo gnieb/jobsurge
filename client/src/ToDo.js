@@ -1,6 +1,6 @@
 import { useState } from "react"
 import EditToDo from "./EditToDo"
-export default function ToDo({t, removeToDo, setTodos}){
+export default function ToDo({t, removeToDo, handleEditTD}){
     const [isDone, setIsDone] = useState(t.done)
     const [showEdit, setShowEdit] = useState(false)
 
@@ -46,7 +46,7 @@ export default function ToDo({t, removeToDo, setTodos}){
     
     return (
         <div>
-            {showEdit? <EditToDo setShowEdit={setShowEdit} t={t} setTodos={setTodos} /> : <></> }
+            {showEdit? <EditToDo setShowEdit={setShowEdit} t={t} handleEditTD={handleEditTD} /> : <></> }
             <div className="text-2xl m-1">
                     ~ {t.title}
                 <button 

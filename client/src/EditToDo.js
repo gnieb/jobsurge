@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react"
-export default function EditToDo({setShowEdit, t}) {
-    const [toDos, setToDos] = useState([])
-    useEffect(() => {
-        fetch('/todos')
-        .then(r=> {
-            if(r.ok) {
-                r.json().then(data => {
-                    setToDos(data)
-                })
-            }
-        })
-    }, [])
+export default function EditToDo({setShowEdit, t, handleEditTD}) {
+    // const [toDos, setToDos] = useState([])
+    // useEffect(() => {
+    //     fetch('/todos')
+    //     .then(r=> {
+    //         if(r.ok) {
+    //             r.json().then(data => {
+    //                 console.log(data)
+    //                 setToDos(data)
+    //             })
+    //         }
+    //     })
+    // }, [])
 
     const [formData, setFormData] = useState(t)
     const handleChange = (e) => {
@@ -19,6 +20,7 @@ export default function EditToDo({setShowEdit, t}) {
             [e.target.id]: e.target.value
         })
     }
+
     const handleSubmit = (e) => {
         e.preventDefault()
         const updatedTD = {
@@ -33,10 +35,9 @@ export default function EditToDo({setShowEdit, t}) {
         })
         .then(r=> {
             if(r.ok){
-                r.json().then(data => {
+                r.json().then(newlyUpdatedTD => {
                     setShowEdit(false)
-                  
-                    setToDos([...toDos, data])
+                    handleEditTD(newlyUpdatedTD)
                     // how to update state on the one updated t???
                 })
             }
