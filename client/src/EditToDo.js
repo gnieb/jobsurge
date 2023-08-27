@@ -1,14 +1,43 @@
-export default function EditToDo() {
+import { useState } from "react"
+export default function EditToDo({setShowEdit, t}) {
     
+    const [formData, setFormData] = useState(t)
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.id]: e.target.value
+        })
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const updatedTD = {
+            title: formData.title,
+            prio: formData.prio,
+            done : false
+        }
+        fetch(`/todos/${t.id}`, {
+        method: "PATCH",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(updatedTD)
+        })
+        .then(r=> {
+            if(r.ok){
+                r.json().then(data => {
+                    setShowEdit(false)
+                })
+            }
+        })
+
+    }
     return (
         <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className="relative w-auto my-6 mx-auto max-w-3xl">
                   <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                     <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
-                      <h3 className="text-3xl font=semibold">ADD IT TO THE LIST </h3>
+                      <h3 className="text-3xl font=semibold">EDIT DESCRIPTION </h3>
                       <button
                         className="bg-pink-200 mx-2 rounded-full border-0 text-black float-right px-3"
-                        onClick={() => setShowModal(false)}
+                        onClick={() => setShowEdit(false)}
                       >
                         close
                       </button>
