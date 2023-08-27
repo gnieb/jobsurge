@@ -26,13 +26,18 @@ export default function Jobs () {
     })
 
     return (
+        <>
+        <div className="h-screen w-full flex justify-center items-center fixed">
+            <Loading />
+        </div>
+        
         <div className="flex justify-between sm:p-10">
                 <div>
-                <Loading />
+                
                 <div className="text-5xl">ODDBALL</div>
                 <div>{displayOdd}</div>
                 </div>
         </div>
-        
+        </>
     )
 }
