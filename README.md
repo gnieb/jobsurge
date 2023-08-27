@@ -64,10 +64,9 @@ README
     ```
 
 ## Features in Progress
-- replace SVG with a small wave
 - implement default theme via CSS config
 - implement loading state for the JOBS page... the web driver takes ignificant time and resources to pull the data, and I want a nice user experience that shows it's doing something! 
 
 
 
-Note: Selenium uses the binary driver to control the web browser of choice. This Python package provides binary drivers for the following supported web browsers: Chrome, Chromium, Brave, Firefox, IE, Edge, and Opera. Note that Safari is not supported.
+**Note:** Selenium uses the binary driver to control the web browser of choice. This Python package provides binary drivers for the following supported web browsers: Chrome, Chromium, Brave, Firefox, IE, Edge, and Opera. Note that Safari is not supported.
