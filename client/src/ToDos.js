@@ -4,7 +4,6 @@ import NewToDo from "./NewToDo"
 
 export default function ToDos({todos, setTodos, handleEditTD}){
     const [showModal, setShowModal] = useState(false)
-    console.log(todos)
 
     const removeToDo = (tObj) => {
         const filterToDos = todos.filter(t => t.id !== tObj.id )
@@ -14,7 +13,7 @@ export default function ToDos({todos, setTodos, handleEditTD}){
     const displayTodayToDo = todos.map(t => {
     if(t.prio === "TODAY"){
         return (
-            <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} setTodos={setTodos} todos={todos} key={t.id}  t={t}/>
+            <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} key={t.id}  t={t}/>
         )
     }
     })
@@ -22,7 +21,7 @@ export default function ToDos({todos, setTodos, handleEditTD}){
     const displayWeekToDo = todos.map(t => {
     if(t.prio === "THIS WEEK"){
         return (
-            <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} setTodos={setTodos} todos={todos} key={t.id} t={t}/>
+            <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} key={t.id} t={t}/>
         )
     }
     })
@@ -30,7 +29,7 @@ export default function ToDos({todos, setTodos, handleEditTD}){
     const displayMonthToDo = todos.map(t => {
     if(t.prio === "THIS MONTH"){
         return (
-            <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} setTodos={setTodos} todos={todos} key={t.id} t={t}/>
+            <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} key={t.id} t={t}/>
         )
     }
     })
@@ -38,7 +37,7 @@ export default function ToDos({todos, setTodos, handleEditTD}){
     const displayYearToDo = todos.map(t => {
         if(t.prio === "THIS YEAR"){
             return (
-                <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} setTodos={setTodos} todos={todos} key={t.id} t={t}/>
+                <ToDo removeToDo={removeToDo} handleEditTD={handleEditTD} key={t.id} t={t}/>
             )
         }
       })
