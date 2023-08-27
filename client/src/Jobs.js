@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Job from "./Job"
+import Loading from "./Loading"
 
 
 export default function Jobs () {
@@ -26,11 +27,11 @@ export default function Jobs () {
 
     return (
         <div className="flex justify-between sm:p-10">
-            <div>
-            <div className="text-5xl">ODDBALL</div>
-            <div>{displayOdd}</div>
-            </div>
-
+                <div>
+                <Loading />
+                <div className="text-5xl">ODDBALL</div>
+                <div>{displayOdd}</div>
+                </div>
         </div>
         
     )
