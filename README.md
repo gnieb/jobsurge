@@ -20,12 +20,6 @@ I needed to develop a career dashboard to help me navigate my job search, organi
 
 ## Features In Progress
 
-- implement editing on the to do's
-    - delete
-    - edit prio
-    - edit description
-README
-
 
 ## Features Completed 
 
