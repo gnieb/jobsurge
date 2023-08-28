@@ -12,7 +12,7 @@ export default function Nav(){
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
 </svg>
 
-    <span className="font-semibold text-xl tracking-tight">JOBWAVE</span>
+    <span className="font-semibold text-xl tracking-tight">JOBSURGE</span>
   </div>
   <div className="block lg:hidden">
     <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">

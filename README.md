@@ -1,9 +1,16 @@
 # JobSurge ⚡
-[Back-End Twin Server Here](https://github.com/gnieb/jobwave-server)
+[Server Repo](https://github.com/gnieb/jobwave-server)
+
+![homepage](homescreenshot.png)
+![to_dos](todoscreenshot.png)
 
 ## About
-This application was originally developed to help me get a job at a company I REALLY wanted to work for, but they didn't have the jobs posted yet that fit my qualifications. 
-**Enter JobWave.**
+**SURGE [ v ]:** 
+**to move suddenly and powerfully forward or upward.** 
+
+This application is a career dashboard. It was originally developed to help me get a job at a company I REALLY wanted to work for, but at that time, they didn't have the jobs posted that fit my qualifications. 
+=> **Enter JobSurge.**
+I needed to develop a career dashboard to help me navigate my job search, organize my priorities, and categorize my goals by Day, Week, Month, and Year. JobSurge was built to navigate my transition from Human Resources into tech. 
 
 ### Built With
 

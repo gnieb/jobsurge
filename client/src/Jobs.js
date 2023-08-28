@@ -13,6 +13,7 @@ export default function Jobs () {
                 if (r.ok) {
                     r.json().then(r => {
                         setJobs(r)
+
                 })
             }
         })
@@ -25,11 +26,18 @@ export default function Jobs () {
        ) 
     })
 
+    if (jobs.length < 1 ) {
+        return (
+          <div className="h-screen w-full flex justify-center items-center fixed">
+            <Loading />
+        </div>  
+        )
+    }
+
     return (
         <>
-        <div className="h-screen w-full flex justify-center items-center fixed">
-            <Loading />
-        </div>
+        
+        
         
         <div className="flex justify-between sm:p-10">
                 <div>
