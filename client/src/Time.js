@@ -13,7 +13,7 @@ export default function Time(){
     return(
         <div className="">
             <div className="text-center">
-                <div className="text-3xl lg:text-[250px] font-black leading-none">
+                <div className="text-center text-6xl lg:text-9xl desktop:text-[200px] font-black leading-none">
                     {weekDay.toUpperCase()}
                 </div>
                 <div className="text-3xl sm:text-7xl p-1">{date.toLocaleDateString()}</div>
