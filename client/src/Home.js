@@ -48,21 +48,21 @@ export default function Home () {
     return (
         <div>
             <div className="">
-                <div className = "m-5 p-5">
+                <div className = "m-auto p-5">
                     <Time />
                 </div>
 
-            <div className="flex justify-between px-5">
-                <div className="w-3/4 p-2 px-5 text-center">
+            <div className="sm:flex justify-between sm:px-5">
+                <div className="w-full sm:w-3/4 p-2 text-center">
                     <ToDos todos={todos} setTodos={setTodos} handleEditTD={handleEditTD} />
                 </div>
-                <div className="w-1/4 text-right px-5">
-                    <div className="text-3xl py-3">Did you drink water today?</div>
-                    <div className="py-3">{randomQuote.quote}</div>
+                <div className="w-full sm:w-1/4 text-right p-4 sm:px-5">
+                    <div className="sm:text-3xl py-3 italic font-bold">Did you drink water today?</div>
+                    <div className="py-3">{randomQuote.quote}.</div>
                     <div className="py-3">
                         <NavLink to='/advice' className="text-gray-300 text-right hover:text-teal-400 hover:cursor-pointer">See all ♡</NavLink>
                     </div>
-                    <div className="flex items-center justify-center ">
+                    <div className="flex items-center justify-center text-orange-700">
                         <p>don't forget to move around a little! Take a break, go for a walk.</p>
                     </div>
                 </div>

@@ -50,21 +50,21 @@ export default function ToDos({todos, setTodos, handleEditTD}){
             <NewToDo setShowModal={setShowModal} setTodos={setTodos} todos={todos} /> : <></>}
             
                 
-                <div className="py-5 font-bold text-4xl border">TODAY
+                <div className="py-5 font-bold text-2xl sm:text-4xl border">TODAY
                 {displayTodayToDo}
                 </div>
             <div className="flex p-2">
                 <div className="w-1/2 border py-5">
-                    <div className="font-bold text-4xl ">THIS WEEK</div>
+                    <div className="font-bold text-2xl sm:text-4xl ">THIS WEEK</div>
                     {displayWeekToDo}
                 </div>
                 <div className="w-1/2 border py-5">
-                <div className="font-bold text-4xl">THIS MONTH</div>
+                <div className="font-bold text-2xl sm:text-4xl">THIS MONTH</div>
                     {displayMonthToDo}
                 </div>
             </div>
             <div className="border py-5">
-            <div className="font-bold text-5xl ">{thisYear.getFullYear()}</div>
+            <div className="font-bold text-2xl sm:text-5xl ">{thisYear.getFullYear()}</div>
                 {displayYearToDo}
             </div>
             <button onClick={()=> setShowModal(!showModal)} 
