@@ -18,24 +18,25 @@ I needed to develop a career dashboard to help me navigate my job search, organi
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 * ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## Features In Progress
-
 
 ## Features Completed 
 
 
-- Home Page created with placeholder encouraging quotes and reminders 
-- Jobs Page created with job placeholders, waiting for web scraper data
-- Ability to add more advice collected from different developers to the collection of wisdom I've gathered.
-- SVG lightning icon
+- DASHBOARD FEATURE on home page which displays To Do lists, One random quote from the library of advice from experienced Software Engineers, and a daily reminder to stay hydrated
+- JOBS FEATURE - jobs from a company in which I am very interested in working are displayed with links to the job position and application using Selenium's headless Chrome web driver to scrape dynamic data from the company's website.
+- - **Note:** Selenium uses the binary driver to control the web browser of choice. This Python package provides binary drivers for the following supported web browsers: Chrome, Chromium, Brave, Firefox, IE, Edge, and Opera. Note that Safari is not supported.
+- ADVICE MISC- A library of advice collected from fellow Software Engineers. Ability to add new advice to the collection as I meet more S.E's and gain more wisdom in the industry.
 - TO DO FEATURE: Career search to-do's displayed by priority timeframe, with full CRUD actions:
-
 - - able to cross it off for the dopamine hit and show everything you got done that day. 
 - - able to remove a to do completely from dashboard when complete
+- LOADING - the JOBS feature can take some time to display on the web page due to the headless web driver scraping the data from the other website. For a more pleasant user experience, there are cute little bubbles in the middle of the page to let the user know that something is happening, just a few more seconds!
+
+## Features in Progress
+- implement default theme via CSS config
+- implement loading state for the JOBS page... the web driver takes ignificant time and resources to pull the data, and I want a nice user experience that shows it's doing something! 
 
 
 ## Usage
-
 ### Installation
 1. Fork and Clone this repo and the back-end repo
    ```sh
@@ -64,10 +65,4 @@ I needed to develop a career dashboard to help me navigate my job search, organi
     python app.py
     ```
 
-## Features in Progress
-- implement default theme via CSS config
-- implement loading state for the JOBS page... the web driver takes ignificant time and resources to pull the data, and I want a nice user experience that shows it's doing something! 
 
-
-
-**Note:** Selenium uses the binary driver to control the web browser of choice. This Python package provides binary drivers for the following supported web browsers: Chrome, Chromium, Brave, Firefox, IE, Edge, and Opera. Note that Safari is not supported.
