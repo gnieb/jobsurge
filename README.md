@@ -33,7 +33,6 @@ I needed to develop a career dashboard to help me navigate my job search, organi
 
 ## Features in Progress
 - implement default theme via CSS config
-- implement loading state for the JOBS page... the web driver takes ignificant time and resources to pull the data, and I want a nice user experience that shows it's doing something! 
 
 
 ## Usage
