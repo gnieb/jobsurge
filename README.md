@@ -22,13 +22,12 @@ I needed to develop a career dashboard to help me navigate my job search, organi
 ## Features Completed 
 
 
-- DASHBOARD FEATURE on home page which displays To Do lists, One random quote from the library of advice from experienced Software Engineers, and a daily reminder to stay hydrated
-- JOBS FEATURE - jobs from a company in which I am very interested in working are displayed with links to the job position and application using Selenium's headless Chrome web driver to scrape dynamic data from the company's website.
+- DASHBOARD - on home page which displays To Do lists, One random quote from the library of advice from experienced Software Engineers, and a daily reminder to stay hydrated
+- JOBS - jobs from a company in which I am very interested in working are displayed with links to the job position and application using Selenium's headless Chrome web driver to scrape dynamic data from the company's website.
 - - **Note:** Selenium uses the binary driver to control the web browser of choice. This Python package provides binary drivers for the following supported web browsers: Chrome, Chromium, Brave, Firefox, IE, Edge, and Opera. Note that Safari is not supported.
-- ADVICE MISC- A library of advice collected from fellow Software Engineers. Ability to add new advice to the collection as I meet more S.E's and gain more wisdom in the industry.
-- TO DO FEATURE: Career search to-do's displayed by priority timeframe, with full CRUD actions:
-- - able to cross it off for the dopamine hit and show everything you got done that day. 
-- - able to remove a to do completely from dashboard when complete
+- ADVICE MISC - A library of advice collected from fellow Software Engineers. Ability to add new advice to the collection as I meet more S.E's and gain more wisdom in the industry.
+- TO DOS - Keep track of career search to-do's and goals displayed by priority timeframe
+
 - LOADING - the JOBS feature can take some time to display on the web page due to the headless web driver scraping the data from the other website. For a more pleasant user experience, there are cute little bubbles in the middle of the page to let the user know that something is happening, just a few more seconds!
 
 ## Features in Progress
