@@ -1,8 +1,8 @@
 # JobSurge ⚡
 [Server Repo](https://github.com/gnieb/jobwave-server)
 
-![homepage](homescreenshot.png)
-![to_dos](todoscreenshot.png)
+![homepage](client/photos/homescreenshot.png)
+![to_dos](client/photos/todoscreenshot.png)
 
 ## About
 **SURGE [ v ]:** 
