@@ -2,7 +2,7 @@
 [Server Repo](https://github.com/gnieb/jobwave-server)
 
 ![homepage](client/photos/homescreenshot.png)
-![to_dos](client/photos/todoscreenshot.png)
+
 
 ## About
 **SURGE [ v ]:** 
@@ -28,6 +28,9 @@ I needed to develop a career dashboard to help me navigate my job search, organi
 
 
 - DASHBOARD - on home page which displays To Do lists, One random quote from the library of advice from experienced Software Engineers, and a daily reminder to stay hydrated
+
+![to_dos](client/photos/todoscreenshot.png)
+
 - JOBS - jobs from a company in which I am very interested in working are displayed with links to the job position and application using Selenium's headless Chrome web driver to scrape dynamic data from the company's website.
 - - **Note:** Selenium uses the binary driver to control the web browser of choice. This Python package provides binary drivers for the following supported web browsers: Chrome, Chromium, Brave, Firefox, IE, Edge, and Opera. Note that Safari is not supported.
 - ADVICE MISC - A library of advice collected from fellow Software Engineers. Ability to add new advice to the collection as I meet more S.E's and gain more wisdom in the industry.
