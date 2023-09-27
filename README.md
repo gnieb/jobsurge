@@ -17,6 +17,11 @@ I needed to develop a career dashboard to help me navigate my job search, organi
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 * ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+* ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+* ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) 
+* ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+* ![Beautiful Soup](https://img.shields.io/badge/beautiful_soup-%23121011.svg?style=for-the-badge&logo=data:python/svg?&color=ff69b4)
+* ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
 
 ## Features Completed 
@@ -31,7 +36,7 @@ I needed to develop a career dashboard to help me navigate my job search, organi
 - LOADING - the JOBS feature can take some time to display on the web page due to the headless web driver scraping the data from the other website. For a more pleasant user experience, there are cute little bubbles in the middle of the page to let the user know that something is happening, just a few more seconds!
 
 ## Features in Progress
-- implement default theme via CSS config
+- implement another web scraper to scrape WellFound job board (previously AngelList)
 
 
 ## Usage
